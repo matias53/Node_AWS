@@ -1,7 +1,7 @@
 const Koa = require("koa");
 const json = require("koa-json");
 const bodyParser = require("koa-bodyparser");
-const appPort = 80;
+const appPort = process.env.port || 3000;
 
 const app = new Koa();
 
