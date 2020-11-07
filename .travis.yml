@@ -1,6 +1,10 @@
 language: node_js
 node_js:
-  - lts/*
+  - "12"
 
+script:
+    - echo '***** Build Started *****'
+    - echo 'Installing dependencies' 
+    - npm install
 notifications:
     email: mlsettimo@gmail.com
