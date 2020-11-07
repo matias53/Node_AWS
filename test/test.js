@@ -1,15 +1,18 @@
-const supertest = require(supertest)
+let chai = require('chai');
+let chaiHttp = require('chai-http');
+const expect = require('chai').expect;
 
-var server = supertest.agent("http://localhost:3000")
+chai.use(chaiHttp);
+const url = 'http://localhost:3000';
 
-describe("simple test", () => {
-  it('should return home page', (done) => {
-    server
-      .get("/")
-      .expect("Content-type", /text/)
-      .expect(200)
+describe('Test get', () => {
+  it('Should return hello', (done) => {
+    chai.request(url)
+      .get('/')
       .end(function (err, res) {
-        done()
-      })
-  })
-})
+        console.log(res.body)
+        expect(res).to.have.status(200);
+        done();
+      });
+  });
+});

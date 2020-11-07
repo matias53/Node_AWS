@@ -1,21 +1,23 @@
 {
-  "name": "Testing"
-  , "version": "1.0.0"
-  , "description": "Test"
-  , "main": "index.js"
-  , "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    , "start": "node index.js"
-  }
-  , "keywords": []
-  , "author": ""
-  , "license": "ISC"
-  , "dependencies": {
-    "koa": "^2.13.0"
-    , "koa-bodyparser": "^4.3.0"
-    , "koa-json": "^2.0.2"
-    , "mocha": "^8.2.1"
-    , "should": "^13.2.3"
-    , "supertest": "^6.0.1"
+  "name": "Testing",
+  "version": "1.0.0",
+  "description": "Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --exit",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json": "^2.0.2",
+    "mocha": "^8.2.1",
+    "should": "^13.2.3",
+    "supertest": "^6.0.1"
   }
 }
