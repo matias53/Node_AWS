@@ -6,5 +6,6 @@ script:
     - echo '***** Build Started *****'
     - echo 'Installing dependencies' 
     - npm install
+    - npm test
 notifications:
     email: mlsettimo@gmail.com
