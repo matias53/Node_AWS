@@ -1,26 +1,21 @@
 {
-    "name": "Larrosa-Settimo-Zawrzykraj",
-    "version": "1.0.0",
-    "description": "\"# Larrosa-Settimo-Zawrzykraj\"",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node index.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/ASP-N8A/Larrosa-Settimo-Zawrzykraj.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/ASP-N8A/Larrosa-Settimo-Zawrzykraj/issues"
-    },
-    "homepage": "https://github.com/ASP-N8A/Larrosa-Settimo-Zawrzykraj#readme",
-    "dependencies": {
-        "koa": "^2.13.0",
-        "koa-bodyparser": "^4.3.0",
-        "koa-json": "^2.0.2"
-    }
+  "name": "Testing"
+  , "version": "1.0.0"
+  , "description": "Test"
+  , "main": "index.js"
+  , "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    , "start": "node index.js"
+  }
+  , "keywords": []
+  , "author": ""
+  , "license": "ISC"
+  , "dependencies": {
+    "koa": "^2.13.0"
+    , "koa-bodyparser": "^4.3.0"
+    , "koa-json": "^2.0.2"
+    , "mocha": "^8.2.1"
+    , "should": "^13.2.3"
+    , "supertest": "^6.0.1"
+  }
 }
